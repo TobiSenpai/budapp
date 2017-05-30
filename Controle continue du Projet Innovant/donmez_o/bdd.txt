@@ -1,0 +1,57 @@
+use budapp
+
+> db.utilisateurs.find()
+{
+	"_id" : ObjectId("592d95820b5525e23fcd8b1d"),
+	"id_utilsateur" : 0,
+	"nom" : "Doe",
+	"prenom" : "john",
+	"email" : "john.do@gmail.com",
+	"regime_alimentaire" : [ "halal", "casher", "vegan" ],
+	"date_inscription" : "12/08/1997",
+	"mot_de_passe" : "azerty"
+}
+
+> db.recettes.find()
+{
+	"_id" : ObjectId("592d9bc30b5525e23fcd8b1e"),
+	"id_recette" : 0,
+	"nomRecette" : "tortilla",
+	"ingredients" : [ "oeufs", "pomme de terre", "ails" ],
+	"prix" : [ 1, 2, 1.5 ],
+	"prix_total" : 4.5,
+	"regime_alimentaire" : [ "casher", "halal", "vegetarien" ],
+	"lieu" : "carrefour",
+	"note" : 5.0
+}
+
+> db.recetteSemaine.find()
+{
+	"_id" : ObjectId("592d9c880b5525e23fcd8b1f"),
+	"id_recetteSemaine" : 0,
+	"id_utilisateur" : 0,
+	"id_recette" : 0
+}
+
+> db.signalements.find()
+{
+	"_id" : ObjectId("592da0ed0b5525e23fcd8b21"),
+	"id_signalement" : 0,
+	"id_recette" : 0,
+	"id_utilsateur" : 0,
+	"date_signalement" : "27/05/2017"
+}
+
+> db.bonplans.find()
+{ 
+	"_id" : ObjectId("592da0310b5525e23fcd8b20"),
+	"id_bonPlan" : 0,
+	"id_utilisateur" : 0,
+	"nom_bonPlan" : "Menu en promotion",
+	"localisation" : "ivry sur seine",
+	"prix" : 4.5,
+	"note" : 4.0,
+	"restaurant" : "chicken street",
+	"date_valide" : "24/05/2017",
+	"date_expire" : "30/05/2017"
+}
