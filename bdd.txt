@@ -30,7 +30,9 @@ use budapp
 	"_id" : ObjectId("592d9c880b5525e23fcd8b1f"),
 	"id_recetteSemaine" : 0,
 	"id_utilisateur" : 0,
-	"id_recette" : 0
+	"id_recette" : [ 1, 2, 9 ],
+	"prix_recette" : [5.2, 6.7, 9.5],
+	"prix_max_semaine" : 15
 }
 
 > db.signalements.find()
